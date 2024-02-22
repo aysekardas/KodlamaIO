@@ -15,5 +15,7 @@ namespace Entities.Concrete
 
         public string Name { get; set; }
         public ICollection<Course> Courses { get; set; }
+
+        // Bir eğitmenin birden fazla kursu olabilir
     }
 }

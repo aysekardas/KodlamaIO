@@ -18,10 +18,21 @@ namespace DataAccess.Concrete
 
         public KodlamaIoContext(DbContextOptions dbContextOptions) : base(dbContextOptions) { 
         
-        
+           
         
         }
 
-   
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+           
+            modelBuilder.Entity<Course>()
+                .HasOne(c => c.Category) 
+                .WithMany(cat => cat.Courses) 
+                .HasForeignKey(c => c.CategoryId); 
+
+
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }

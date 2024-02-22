@@ -13,8 +13,17 @@ namespace Entities.Concrete
         {
             
         }
-        public string Title { get; set; }
+        public string Name { get; set; }
+
+        // Bir kursun bir kategorisi olabilir
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
+        public int InstructorId { get; set; }
+
+        //bir kurs bir eğitmene ait olmalı
+        public Instructor Instructor { get; set; }  
+        
+
         public ICollection<Category> Categories { get; set; }
-        public Instructor Instructor { get; set; }  //bir kurs bir eğitmene ait olmalı
     }
 }
