@@ -15,6 +15,6 @@ namespace Entities.Concrete
         }
         public string Title { get; set; }
         public ICollection<Category> Categories { get; set; }
-        public Instructor Instructor { get; set; }
+        public Instructor Instructor { get; set; }  //bir kurs bir eğitmene ait olmalı
     }
 }
