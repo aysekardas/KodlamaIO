@@ -2,5 +2,11 @@
 {
     public class DeleteInstructorRequest
     {
+        public int Id { get; set; }
+
+        public DeleteInstructorRequest(int id)
+        {
+            Id = id;
+        }
     }
 }

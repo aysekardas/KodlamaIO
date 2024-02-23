@@ -2,5 +2,9 @@
 {
     public class GetInstructorListRequest
     {
+        public GetInstructorListRequest()
+        {
+            
+        }
     }
 }
