@@ -2,5 +2,9 @@
 {
     public class GetInstructorListResponse
     {
+        public GetInstructorListResponse()
+        {
+            
+        }
     }
 }
