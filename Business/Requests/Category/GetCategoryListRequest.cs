@@ -2,5 +2,6 @@
 {
     public class GetCategoryListRequest
     {
+        public int Id { get; set; }
     }
 }
